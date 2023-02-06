@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.infinity.jerry.yyd_tms.ui.customview.ZTitlebar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.infinity.jerry.yyd_tms.ui.customview.ZTitlebar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/blackTextView"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/cash_payment" />
+
+                    <EditText
+                        android:id="@+id/edCashPayment"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/arrive_payment" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/edArrPayment"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/back_payment" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/edBackPayment"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/month_payment" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/edMonthPayment"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/collect_payment" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/edCollePayment"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/actionBar_height">
+
+        <TextView
+            android:id="@+id/tvRedo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/redo"
+            android:background="@color/color_darkBlue"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/textSize_2"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvEnsure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/yes_do"
+            android:background="@color/color_orange"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/textSize_2"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

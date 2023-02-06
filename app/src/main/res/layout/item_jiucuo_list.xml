@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/normal_dis"
+    android:paddingRight="@dimen/normal_dis">
+
+
+    <ImageView
+        android:id="@+id/imChoosed"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/icon_radio_circle_off" />
+
+    <TextView
+        android:id="@+id/tvStation"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/normal_dis"
+        android:gravity="center"
+        android:text="xxxx ---- xxxx"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/textSize_2" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="123123213213"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/textSize_3" />
+
+
+</LinearLayout>

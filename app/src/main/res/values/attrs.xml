@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan. 
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna. 
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus. 
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu. 
+  -->
+
+<resources>
+    <declare-styleable name="ZDrawEditText">
+        <attr name="titleText" format="string" />
+        <attr name="chooseItem" format="boolean" />
+        <attr name="contentHint" format="string" />
+        <attr name="chooseContent" format="string" />
+        <attr name="mTitleTextColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ZBossItemView">
+        <attr name="image_reference" format="reference" />
+        <attr name="text_content" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ZxingViewFinderView">
+        <attr name="scannerBoundColor" format="color" />
+        <attr name="scannerBoundWidth" format="dimension" />
+        <attr name="scannerBoundCornerColor" format="color" />
+        <attr name="scannerBoundCornerWith" format="dimension" />
+        <attr name="scannerBoundCornerHeight" format="dimension" />
+        <attr name="scannerLaserResId" format="reference" />
+        <attr name="scannerTipText" format="string" />
+        <attr name="scannerTipTextSize" format="dimension" />
+        <attr name="scannerTipTextColor" format="color" />
+        <attr name="scannerTipTextMargin" format="dimension" />
+        <attr name="scannerTipTextGravity" format="boolean" />
+
+
+    </declare-styleable>
+
+
+</resources>

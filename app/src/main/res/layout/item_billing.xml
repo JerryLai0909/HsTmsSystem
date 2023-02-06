@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="@dimen/middle_dis"
+        android:elevation="@dimen/lower_dis"
+        app:cardCornerRadius="@dimen/lower_dis">
+
+        <LinearLayout
+            android:id="@+id/llall"
+            android:background="@color/level3_gray_light2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        android:id="@+id/blNumber"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/blTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/normal_dis"
+                        android:textColor="@color/level1_gray_dark"
+                        android:textSize="@dimen/textSize_2" />
+
+                    <TextView
+                        android:id="@+id/blState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/color_orange"
+                        android:textSize="@dimen/textSize_2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/level3_gray_light2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/middle_dis"
+                    android:paddingRight="@dimen/middle_dis">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/tms_icon_send" />
+
+                    <TextView
+                        android:id="@+id/blInit"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/lower_dis"
+                        android:textColor="@color/color_black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/bl_inInfo"
+                        style="@style/grayTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/color_black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/middle_dis"
+                    android:paddingRight="@dimen/middle_dis">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/tms_icon_receive" />
+
+                    <TextView
+                        android:id="@+id/blTermi"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/color_black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/bl_terInfo"
+                        style="@style/grayTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/color_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/bl_pack"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/middle_dis"
+                        android:text="@string/packages" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/bl_good"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingRight="@dimen/middle_dis"
+                        android:text="@string/goods" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <com.infinity.jerry.yyd_tms.ui.customview.AutoScaleTextView
+                        android:id="@+id/blPayMethod"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/middle_dis"
+                        android:text="xx" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <com.infinity.jerry.yyd_tms.ui.customview.AutoScaleTextView
+                        android:id="@+id/blFreight"
+                        style="@style/blackTextView"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:paddingRight="@dimen/middle_dis"
+                        android:text="xx" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/blDeliMethod"
+                        style="@style/blackTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="@dimen/middle_dis"
+                        android:paddingRight="@dimen/middle_dis"
+                        android:text="xx" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDetail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    style="@style/blackTextView"
+                    android:id="@+id/tvCollectxx"
+                    android:paddingLeft="@dimen/middle_dis"
+                    android:paddingRight="@dimen/middle_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/bl_detail"
+                    style="@style/blackTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/middle_dis"
+                    android:paddingRight="@dimen/middle_dis"
+                    android:text="@string/show_detail"
+                    android:textColor="@color/color_orange" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/level3_gray_light2" />
+
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bt_1"
+                        style="@style/blackTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/middle_dis"
+                        android:layout_marginRight="@dimen/middle_dis"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_white"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/bt_2"
+                        style="@style/blackTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/middle_dis"
+                        android:layout_marginRight="@dimen/middle_dis"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_white"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/bt_3"
+                        style="@style/blackTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/middle_dis"
+                        android:layout_marginRight="@dimen/middle_dis"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_darkBlue"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/bt_4"
+                        style="@style/blackTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/middle_dis"
+                        android:layout_marginRight="@dimen/middle_dis"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_darkBlue"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/drawBill2_linear">
+
+    <TextView
+        android:id="@+id/z_tv_title"
+        style="@style/drawBill2_tvStyle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/z_auto_content"
+        style="@style/drawBill2_editText" />
+
+    <TextView
+        android:id="@+id/z_auto_choose"
+        android:layout_width="60dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/color_white"
+        android:background="@color/level1_gray_dark"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

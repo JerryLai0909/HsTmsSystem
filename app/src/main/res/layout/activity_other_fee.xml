@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.infinity.jerry.yyd_tms.ui.customview.ZTitlebar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.infinity.jerry.yyd_tms.ui.customview.ZTitlebar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/value_declar" />
+
+                    <EditText
+                        android:id="@+id/edDeclarFee"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/lower_dis">
+
+                        <TextView
+                            style="@style/blackTextView"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/lower_dis"
+                            android:text="@string/value_fee" />
+
+                        <TextView
+                            android:id="@+id/tvRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="-----"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edValue_fee"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/deli_fee" />
+
+                    <EditText
+                        android:id="@+id/edDeli_fee"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/receice_fee" />
+
+                    <EditText
+                        android:id="@+id/edRecev_fee"
+
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/handle_fee" />
+
+                    <EditText
+                        android:id="@+id/edHandle_fee"
+
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/liftFork_fee" />
+
+                    <EditText
+                        android:id="@+id/edLiftFork_fee"
+
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/package_fee" />
+
+                    <EditText
+                        android:id="@+id/edPack_fee"
+
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <TextView
+                        style="@style/blackTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:text="@string/upstair_fee" />
+
+                    <EditText
+                        android:id="@+id/edUpstair_fee"
+
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_height"
+                android:layout_marginTop="@dimen/middle_dis"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/lower_dis">
+
+                        <TextView
+                            style="@style/blackTextView"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lower_dis"
+                            android:text="@string/cash_back" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="(已付回扣)"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edCashBack_fee"
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/lower_dis"
+                    android:paddingRight="@dimen/lower_dis">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/lower_dis">
+
+                        <TextView
+                            style="@style/blackTextView"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/lower_dis"
+                            android:text="@string/own_back"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="(未付回扣)"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edOwnBack_fee"
+
+                        style="@style/drawBill2_editText"
+                        android:layout_marginLeft="@dimen/lower_dis"
+                        android:inputType="number"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_darkBlue"
+            android:gravity="center"
+            android:text="@string/redo"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/textSize_2" />
+
+        <TextView
+            android:id="@+id/tvEnsure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_orange"
+            android:gravity="center"
+            android:text="@string/yes_do"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/textSize_2" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
